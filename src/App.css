@@ -1,19 +1,134 @@
 :root {
     --color-orange: #eb5b02;
-    --color-blue: #4A6BFF;
-    --color-black: #000000;
-    --color-white: #FFFEDE;
+    --color-orangelight: #ed762b;
+    --color-orangedark: #b34500;
+    --color-whitedark: #b5ada8;
 }
+/*! AppBar*/
 .appBar{
-    background: linear-gradient(to bottom, #0f023c, black);
+    background: linear-gradient(to bottom, ghostwhite 60%, var(--color-whitedark));
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 .appBar__ul{
     display: flex;
-    gap: .7rem;
-    
+    gap: .7rem; 
 }
 .appBar__ul__li{
     list-style: none;
+    color: var(--color-orange);
+    font-weight: bold ;
+}
+
+/*! Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 70px;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("../public/images/abogados2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vw;
+    max-height: 70vh;
     color: ghostwhite;
+    text-shadow: black 2px 2px 2px;
+}
+
+/*! About */
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+}
+.about__h2{
+    text-align: center;
+    margin: 2rem;
+}
+.about__container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+.about__container__div{
+    max-width: 270px;
+}
+.about__container__h3{
+    
+}
+.about__container__p{
+    
+}
+
+/*! Programs*/
+.programs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+}
+.programs__h2{
+    text-align: center;
+    margin: 2rem;
+}
+.programs__container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+.programs__container__div{
+    max-width: 270px;
+}
+.programs__container__h3{
+    
+}
+.programs__container__p{
+    
+}
+/*! ContactUs */
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 7rem;
+}
+.contactUs__container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/*! Footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, var(--color-orange) 70%, var(--color-orangedark));
+    font-weight: 600;
+    text-shadow: black .5px .5px .5px;
+    gap: 1.3rem;
+    height: 300px;
+}
+.footer__container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
 }
